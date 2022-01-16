@@ -19,8 +19,12 @@ Halts execution of python code.  See [adafruit link](https://learn.adafruit.com/
 3. Copy UF2 image to RPI-RP2 drive
 ![Screenshot](img/troubleshooting1.png)
 
-## Stuck in READ only mode
+## Stuck in READ ONLY mode
 #
-1. Try safe mode.
-2. Edit/Copy files
-3. If this doesn't work, then nuke the flash
+1. Put into safe mode.
+2. From Mu REPL [(see adafruit link)](https://learn.adafruit.com/adafruit-macropad-rp2040/the-repl), type 
+```
+import storage
+storage.erase_filesystem()
+```
+If this doesn't work, then nuke the flash
