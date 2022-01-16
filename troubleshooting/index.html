@@ -108,7 +108,7 @@
             
             <li class="nav-item" data-level="1"><a href="#_3" class="nav-link"></a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#stuck-in-read-only-mode" class="nav-link">Stuck in READ only mode</a>
+            <li class="nav-item" data-level="2"><a href="#stuck-in-read-only-mode" class="nav-link">Stuck in READ ONLY mode</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -145,13 +145,16 @@
 <li>Copy UF2 image to RPI-RP2 drive
 <img alt="Screenshot" src="../img/troubleshooting1.png" /></li>
 </ol>
-<h2 id="stuck-in-read-only-mode">Stuck in READ only mode</h2>
+<h2 id="stuck-in-read-only-mode">Stuck in READ ONLY mode</h2>
 <h1 id="_4"></h1>
 <ol>
-<li>Try safe mode.</li>
-<li>Edit/Copy files</li>
-<li>If this doesn't work, then nuke the flash</li>
-</ol></div>
+<li>Put into safe mode.</li>
+<li>From Mu REPL <a href="https://learn.adafruit.com/adafruit-macropad-rp2040/the-repl">(see adafruit link)</a>, type </li>
+</ol>
+<pre><code>import storage
+storage.erase_filesystem()
+</code></pre>
+<p>If this doesn't work, then nuke the flash</p></div>
             </div>
         </div>
 
