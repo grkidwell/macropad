@@ -1,4 +1,5 @@
 # Welcome to Adabox 19 - Macropad 
+For repository of these instructions see [github macropad](https://github.com/grkidwell/macropad)
 
 Adafruit page at [adafruit-macropad](https://learn.adafruit.com/adafruit-macropad-rp2040/overview
 )
