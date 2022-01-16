@@ -2,7 +2,7 @@
 Tutorial for initial configuration of the Adafruit
 Macropad.
 
-https://grkidwell.github.io/macropad
+https://grkidwell.github.io/macropad/
 
 Components:
 
